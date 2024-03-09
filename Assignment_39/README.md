@@ -5,10 +5,11 @@
 ![](data/new-customer-ratio.png)
 
 ---
-- <p style="color: lightgray; font-size: 18px; font-family: Tahoma">COVID-19 🦠</p>
+- <p style="color: lightgray; font-size: 18px; font-family: Tahoma">COVID-19 🦠 <br/>Highest new cases in April 2020</p>
 
-![]()
-![]()
+![](data/8-Countries.JPG)
+![](data/newCases-vs-newDeads.png)
+![](data/Daily-Deaths.png)
 
 ---
 - <p style="color: lightgray; font-size: 18px; font-family: Tahoma">DigiKala 📦</p>
