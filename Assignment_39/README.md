@@ -14,5 +14,5 @@
 ---
 - <p style="color: lightgray; font-size: 18px; font-family: Tahoma">DigiKala 📦</p>
 
-![]()
-
+![](data/Number-of-Orders-Per-Month.png)
+![](data/Number-of-Customers-Per-City.png)
