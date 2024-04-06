@@ -23,5 +23,10 @@ class KNN:
       nearest_neighbors = np.argsort(distances)[0:self.k]
       result = np.bincount(self.Y_train[nearest_neighbors])
       outputs.append(np.argmax(result))
-
     return outputs
+
+  def evaluate(self, X, Y):
+    Y_pred = self.predict(X)
+    accuracy = np.sum(Y_pred == Y) / len(Y)
+    return round(accuracy, 2)
+
