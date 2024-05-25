@@ -1,8 +1,8 @@
-<p style="color: orange; font-weight: bold; font-size: 18px">Assinment-42 (Machine Learning)</p>
+<p style="color: orange; font-weight: bold; font-size: 18px">Assinment-43 (Machine Learning)</p>
 <br>
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Analysis of A public dataset drawn from the 2012 U.S. Army Anthropometric Survey</p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Finding Nemo</p>
 ![](data/Distribution-based-on-Stature-and-weight.png)
 
 <br>
@@ -13,14 +13,14 @@
 <br>
 
 ### Split dataset to train and test (%80 for train and %20 for test):
-- Size of training set: 4854
-- Size of testing set: 1214
+- Size of training set: 
+- Size of testing set: 
 
 
 ---
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Implement and fit your object oriented KNN algorithm on the train dataset.</p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Finding Dory</p>
 
 
 ![](data/accuracy-of-myKnn.JPG)
@@ -29,7 +29,7 @@
 ---
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Fit the scikit-learn KNN algorithm on the train dataset:</p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">IRIS dataset</p>
 
 
 ![](data/accuracy-of-KNeighborsClassifier.JPG)
