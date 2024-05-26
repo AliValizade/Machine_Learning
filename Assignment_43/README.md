@@ -2,19 +2,39 @@
 <br>
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Finding Nemo</p>
-![](data/Distribution-based-on-Stature-and-weight.png)
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Remove Nemo bg</p>
+![](data/nemo.jpg)
 
 <br>
 <br>
 
-![](data/Stature-Distribution-by-Gender.png)
+![](data/nemo-mask.png)
+
+<br>
+<br>
+
+![](data/rm-bg-nemo.png)
 
 <br>
 
-### Split dataset to train and test (%80 for train and %20 for test):
-- Size of training set: 
-- Size of testing set: 
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Remove Abji-Nemo bg.</p>
+![](data/abjie-nemo.jpg)
+
+<br>
+<br>
+
+![](data/abjie-nemo-mask.png)
+
+<br>
+<br>
+
+![](data/rm-bg-abji-nemo.png)
+
+<br>
+
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Remove Abji-Nemo bg with FindingNemo Class.</p>
+
+![](data/rm-bg-abji-nemo-f.png)
 
 
 ---
