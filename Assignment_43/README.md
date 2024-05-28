@@ -43,8 +43,8 @@
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Finding Dory</p>
 
 
-![](data/accuracy-of-myKnn.JPG)
-![](data/Confusion-matrix-myKnn.png)
+![](data/dory.jpg)
+![](data/rm-bg-dash-dory-f.png)
 
 ---
 <br>
