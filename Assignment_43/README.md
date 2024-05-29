@@ -65,5 +65,9 @@
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Breast Cancer dataset</p>
 
 
-![](data/accuracy-of-KNeighborsClassifier.JPG)
-![](data/Confusion-matrix-sklearnKnn.png)
+
+![](data/ac-bc-m.JPG)
+![](data/ac-bc-sk.JPG)
+
+![](data/c_matrix_bc.png)
+
