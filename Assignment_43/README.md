@@ -51,6 +51,19 @@
 
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">IRIS dataset</p>
 
+![](data/iris.jpg)
+
+![](data/df-myknn.JPG)
+![](data/df-sk.JPG)
+
+![](data/c_matrix_iris.png)
+
+
+---
+<br>
+
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Breast Cancer dataset</p>
+
 
 ![](data/accuracy-of-KNeighborsClassifier.JPG)
 ![](data/Confusion-matrix-sklearnKnn.png)
