@@ -2,6 +2,12 @@
 <br>
 <br>
 
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Abalone (Regression)</p>
+![](data/abalone-LLS.png)
+
+<br>
+<br>
+
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Students Performance (Regression)</p>
 ![](data)
 
