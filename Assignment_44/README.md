@@ -6,20 +6,14 @@
 ![](data/abalone-LLS.png)
 
 <br>
-<br>
 
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Students Performance (Regression)</p>
-![](data)
 
-<br>
-<br>
+![](data/Students-Performance-LLS.png)
 
-![](data)
+![](data/5-wrong-line.png)
 
-<br>
-<br>
-
-![](data)
+![](data/Students-Performance-Scipy-Linregress.png)
 
 <br>
 
