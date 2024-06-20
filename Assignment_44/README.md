@@ -21,12 +21,6 @@
 
 ![](data/boston.png)
 
-<br>
-<br>
-
-![](data)
-
-<br>
 
 
 
