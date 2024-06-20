@@ -24,3 +24,19 @@ class LLS:
         plt.ylabel(ylabel)
         plt.title('Linear Regression')
         plt.show()
+
+
+class LLS_3D:
+    def __init__(self):
+        self.w = None
+
+    # Train
+    def fit(self, X, y):
+        X_b = np.hstack([np.ones((X.shape[0], 1)), X])    # Add bias column
+        self.w = np.matmul(np.matmul(np.linalg.inv(np.matmul(X_b.T, X_b)), X_b.T), y)
+
+    # Predict
+    def predict(self, X):
+        X_b = np.hstack([np.ones((X.shape[0], 1)), X])    # Add bias column
+        return X_b.dot(self.w)
+    

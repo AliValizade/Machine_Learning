@@ -18,12 +18,8 @@
 <br>
 
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Boston house-prices (Regression) 🏠</p>
-![](data)
 
-<br>
-<br>
-
-![](data)
+![](data/boston.png)
 
 <br>
 <br>
