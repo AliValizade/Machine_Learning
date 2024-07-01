@@ -7,7 +7,11 @@
 
 ![](data/5-address.JPG)
 
-![](data)
+![](data/my-lls.JPG)
+
+![](data/sk-lls.JPG)
+
+![](data/ridgecv.JPG)
 
 <br>
 
@@ -17,6 +21,8 @@
 </ul>
 
 <br><br>
+
+---
 
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Dollar Rial Price 💰</p>
 

@@ -15,6 +15,7 @@ class LLS:
     def predict(self, X):
         return X @ self.w
     
+    # Evaluate
     def evaluate(self, X_test, Y_test, metric):
         Y_pred  =self.predict(X_test)
         error = Y_test - Y_pred
