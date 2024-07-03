@@ -27,6 +27,7 @@
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Dollar Rial Price 💰</p>
 
 ![](data/dollar-rial-qrowth.JPG)
+![](data/mae-results.JPG)
 
 
 
