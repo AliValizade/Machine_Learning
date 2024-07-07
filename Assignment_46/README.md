@@ -3,19 +3,19 @@
 
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Perceptron (Perception Neuron)</p>
 
-![](data)
+![](data/w-h.png)
 
-![](data)
+![](data/perceptron.png)
 
-![](data)
-
-![](data)
-
-![](data)
 
 <br>
 
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Employee's salary 💵 (Perception Neuron)</p>
 
 
+![](data)
 
+![](data)
+
+![](data)
 
