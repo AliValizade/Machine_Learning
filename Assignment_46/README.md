@@ -13,9 +13,12 @@
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Employee's salary 💵 (Perception Neuron)</p>
 
 
-![](data)
+![](data/Ex-Salary.png)
 
-![](data)
+<br>
 
-![](data)
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Abalone 🐚 (Perception Neuron)</p>
+
+![](data/Abalone.png)
+
 
