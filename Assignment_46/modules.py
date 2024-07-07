@@ -10,16 +10,17 @@ class Perceptron:
         self.stop_condition = False
         self.Epoch = epoch
         self.losses = []
+        self.prev_loss = float('inf')  # Store the previous loss for comparison
 
     def fit(self, X_train, Y_train):
-        while self.stop_condition == False:
+        while not self.stop_condition:
             self.Epoch += 1
             epoch_losses = []  # List to store losses for the current epoch
             for i in range(X_train.shape[0]):
-                x = X_train[i]
+                x = X_train[i].reshape(-1, 1)
                 y = Y_train[i]
 
-                y_pred = x @ self.w + self.b
+                y_pred = np.dot(x.T, self.w) + self.b
                 error = y - y_pred
 
                 self.w += self.lr_w * error * x
@@ -33,8 +34,10 @@ class Perceptron:
             print(f"Epoch {self.Epoch + 1}, Loss: {mean_loss}")
 
             # Check stopping condition
-            if mean_loss < self.loss_threshold:
+            if mean_loss < self.loss_threshold or np.abs(self.prev_loss - mean_loss) < 0.00001:
                 self.stop_condition = True
+
+            self.prev_loss = mean_loss
 
     def predict(self, X_test):
         return np.dot(X_test, self.w) + self.b
