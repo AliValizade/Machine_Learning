@@ -25,6 +25,6 @@
 
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Boston house-prices 🏠 </p>
 
-![](data)
+![](data/boston.png)
 
 
