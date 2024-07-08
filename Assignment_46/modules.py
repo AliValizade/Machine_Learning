@@ -31,7 +31,7 @@ class Perceptron:
             
             mean_loss = np.mean(epoch_losses)
             self.losses.append(mean_loss)
-            print(f"Epoch {self.Epoch + 1}, Loss: {mean_loss}")
+            print(f"Epoch {self.Epoch}, Loss: {mean_loss}")
 
             # Check stopping condition
             if mean_loss < self.loss_threshold or np.abs(self.prev_loss - mean_loss) < 0.00001:

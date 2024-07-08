@@ -10,15 +10,21 @@
 
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Employee's salary 💵 (Perception Neuron)</p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Employee's salary 💵 </p>
 
 
 ![](data/Ex-Salary.png)
 
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Abalone 🐚 (Perception Neuron)</p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Abalone 🐚 </p>
 
 ![](data/Abalone.png)
+
+<br>
+
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Boston house-prices 🏠 </p>
+
+![](data)
 
 
