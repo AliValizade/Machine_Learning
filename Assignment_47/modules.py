@@ -3,30 +3,34 @@ from tqdm import tqdm
 
 
 class Perceptron:
-    def __init__(self, input_size, lr_w=0.001, lr_b=0.01, epoch=0, loss_threshold=0.1):
+    def __init__(self, input_size, lr_w=0.001, lr_b=0.01, epoch=0, loss_threshold=0.1, function='sigmoid'):
         self.w = np.random.rand(input_size, 1)
         self.b = np.random.rand(1, 1)
         self.lr_w = lr_w
         self.lr_b = lr_b
-        self.loss_threshold = loss_threshold
-        self.stop_condition = False
         self.Epoch = epoch
-        self.losses = []
+        self.loss_threshold = loss_threshold
+        self.function = function
+        self.stop_condition = False
+        self.losses_train = []
+        self.losses_test = []
+        self.accuracies_train = []
+        self.accuracies_test = []
         self.prev_loss = float('inf')  # Store the previous loss for comparison
 
-    def activation(self, x, function):
-        if function == 'sigmoid':
+    def activation(self, x):
+        if self.function == 'sigmoid':
             return 1 / (1 + np.exp(-x))
-        elif function == 'relu':
+        elif self.function == 'relu':
             return np.maximum(0, x)
-        elif function == 'tanh':
+        elif self.function == 'tanh':
             return np.tanh(x)
-        elif function == 'linear':
+        elif self.function == 'linear':
             return x
         else:
             raise Exception('Unknown activation function!')
 
-    def fit(self, X_train, Y_train):
+    def fit(self, X_train, Y_train, X_test, Y_test):
         while not self.stop_condition:
             self.Epoch += 1
             epoch_losses = []  # List to store losses for the current epoch
@@ -35,7 +39,7 @@ class Perceptron:
                 y = y.reshape(-1, 1)
                 # Forwarding
                 y_pred = x.T @ self.w + self.b
-                y_pred = self.activation(y_pred, 'sigmoid')
+                y_pred = self.activation(y_pred)
 
                 # Back propagation
                 error = y - y_pred
@@ -45,21 +49,33 @@ class Perceptron:
                 loss = np.mean(np.abs(error))
                 epoch_losses.append(loss)
             
-            mean_loss = np.mean(epoch_losses)
-            self.losses.append(mean_loss)
-            print(f"Epoch {self.Epoch}, Loss: {mean_loss}")
+            mean_loss_train = np.mean(epoch_losses)
+            self.losses_train.append(mean_loss_train)
+            print(f"Epoch {self.Epoch}, Loss: {mean_loss_train}")
+
+            # Evaluate on test data
+            loss_test, accuracy_test = self.evaluate(X_test, Y_test)
+            self.losses_test.append(loss_test)
+            self.accuracies_test.append(accuracy_test)
+
+            # Evaluate on train data
+            loss_train, accuracy_train = self.evaluate(X_train, Y_train)
+            self.accuracies_train.append(accuracy_train)
+
+            print(f"Epoch {self.Epoch}, Test Loss: {loss_test}, Test Accuracy: {accuracy_test}")
+
 
             # Check stopping condition
-            if mean_loss < self.loss_threshold or np.abs(self.prev_loss - mean_loss) < 0.000001:
+            if mean_loss_train < self.loss_threshold or np.abs(self.prev_loss - mean_loss_train) < 0.000001:
                 self.stop_condition = True
 
-            self.prev_loss = mean_loss
+            self.prev_loss = mean_loss_train
 
     def predict(self, X_test):
         Y_pred = []
         for x_test in X_test:
             y_pred = x_test @ self.w + self.b
-            y_pred = self.activation(y_pred, 'sigmoid')
+            y_pred = self.activation(y_pred)
             Y_pred.append(y_pred)
         return np.array(Y_pred).reshape(-1)
     
