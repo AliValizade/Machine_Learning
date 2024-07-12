@@ -50,19 +50,19 @@ class Perceptron:
                 epoch_losses.append(loss)
             
             mean_loss_train = np.mean(epoch_losses)
-            self.losses_train.append(mean_loss_train)
-            print(f"Epoch {self.Epoch}, Loss: {mean_loss_train}")
 
-            # Evaluate on test data
+            # Evaluate test data
             loss_test, accuracy_test = self.evaluate(X_test, Y_test)
             self.losses_test.append(loss_test)
             self.accuracies_test.append(accuracy_test)
 
-            # Evaluate on train data
+            # Evaluate train data
             loss_train, accuracy_train = self.evaluate(X_train, Y_train)
             self.accuracies_train.append(accuracy_train)
+            self.losses_train.append(loss_train)
 
-            print(f"Epoch {self.Epoch}, Test Loss: {loss_test}, Test Accuracy: {accuracy_test}")
+            print(f"📚Epoch {self.Epoch}, Train Loss: {loss_train}, Train Accuracy: {accuracy_train}")
+            print(f"📄Epoch {self.Epoch}, Test Loss: {loss_test}, Test Accuracy: {accuracy_test}")
 
 
             # Check stopping condition
