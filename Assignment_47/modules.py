@@ -3,7 +3,7 @@ from tqdm import tqdm
 
 
 class Perceptron:
-    def __init__(self, input_size, lr_w=0.001, lr_b=0.01, epoch=0, loss_threshold=0.1, function='sigmoid'):
+    def __init__(self, input_size, lr_w, lr_b, epoch, loss_threshold, function='sigmoid'):
         self.w = np.random.rand(input_size, 1)
         self.b = np.random.rand(1, 1)
         self.lr_w = lr_w
@@ -33,7 +33,6 @@ class Perceptron:
     def fit(self, X_train, Y_train, X_test, Y_test):
         while not self.stop_condition:
             self.Epoch += 1
-            epoch_losses = []  # List to store losses for the current epoch
             for x, y in zip(X_train, Y_train):
                 x = x.reshape(-1, 1)
                 y = y.reshape(-1, 1)
@@ -45,11 +44,6 @@ class Perceptron:
                 error = y - y_pred
                 self.w += self.lr_w * x * error
                 self.b += self.lr_b * error
-
-                loss = np.mean(np.abs(error))
-                epoch_losses.append(loss)
-            
-            mean_loss_train = np.mean(epoch_losses)
 
             # Evaluate test data
             loss_test, accuracy_test = self.evaluate(X_test, Y_test)
@@ -66,10 +60,10 @@ class Perceptron:
 
 
             # Check stopping condition
-            if mean_loss_train < self.loss_threshold or np.abs(self.prev_loss - mean_loss_train) < 0.000001:
+            if loss_train < self.loss_threshold or np.abs(self.prev_loss - loss_train) < 0.0001:
                 self.stop_condition = True
 
-            self.prev_loss = mean_loss_train
+            self.prev_loss = loss_train
 
     def predict(self, X_test):
         Y_pred = []

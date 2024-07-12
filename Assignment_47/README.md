@@ -4,11 +4,11 @@
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Perceptron (Activation Functions)</p>
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Surgical 🏨 </p>
 
-![](data/surgical-loss.png)
+![](data/surgical-loss-sigmoid.png)
 
-![](data/surgical-accuracy.png)
+![](data/surgical-accuracy-sigmoid.png)
 
-![](data/cm-surgical.png)
+![](data/cm-surgical-sigmoid.png)
 
 
 <br>
