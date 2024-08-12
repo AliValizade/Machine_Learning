@@ -16,5 +16,11 @@
 - <p style="color: lightgreen; font-size: 18px; font-family: Tahoma"> 🌦پیش بینی آب و هوا </p>
 
 
-![](data)
+![](data/Weather-temperature-during-the-year.png)
+
+![](data/weather-Actual%20vs.%20Predicted%20Temperature.png)
+
+![](data/Weather-loss-chart.png)
+
+![](data/Weather-accuracy-chart.png)
 
