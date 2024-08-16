@@ -1,26 +1,10 @@
-<p style="color: orange; font-weight: bold; font-size: 18px">Assinment-47 (Machine Learning) Neural Networks</p>
+<p style="color: orange; font-weight: bold; font-size: 18px">Assinment-48 (Machine Learning) Neural Networks</p>
 <br>
 
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Perceptron (Activation Functions)</p>
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Surgical 🏨 </p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Multi Layer Perceptron (MLP)</p>
+- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma">Digits dataset</p>
 
-![](data/surgical-loss-sigmoid.png)
+<p style="color: white; font-size: 14px; font-family: Tahoma">The result of ❌loss and ✅accuracy of 3-layer neural network for recognizing handwritten numbers in Train and Test data. </p>
 
-![](data/surgical-accuracy-sigmoid.png)
-
-![](data/cm-surgical-sigmoid.png)
-
-
-<br>
-
-- <p style="color: lightgreen; font-size: 18px; font-family: Tahoma"> 🌦پیش بینی آب و هوا </p>
-
-
-![](data/Weather-temperature-during-the-year.png)
-
-![](data/weather-Actual%20vs.%20Predicted%20Temperature.png)
-
-![](data/Weather-loss-chart.png)
-
-![](data/Weather-accuracy-chart.png)
+![](data/loss-acc.JPG)
 
