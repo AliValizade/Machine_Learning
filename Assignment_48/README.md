@@ -8,3 +8,5 @@
 
 ![](data/loss-acc.JPG)
 
+![](data/l-a-chart.png)
+
