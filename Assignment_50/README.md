@@ -1,4 +1,5 @@
-<p style="color: orange; font-weight: bold; font-size: 18px">Assinment-50 (Machine Learning) Neural Networks</p>
+## Assinment-50 (Machine Learning) Neural Networks
+
 <br>
 
 # House Prices Prediction with TensorFlow
@@ -68,8 +69,10 @@ The dataset used is from the [House Prices - Advanced Regression Techniques](htt
 - RMSE is used as the evaluation metric.
 - The model is evaluated on validation and test sets to assess performance.
 
-- <p style="color: orange; font-weight: bold; font-size: 14px">Loss-MSE (Validation-test): 1247451136.0</p>
-- <p style="color: orange; font-weight: bold; font-size: 14px">Loss-RMSE (Validation-test): 35319.0</p>
+```
+  - Loss-MSE (Validation-test): 1247451136.0
+  - Loss-RMSE (Validation-test): 35319.0
+```
 
 <br><br>
 
