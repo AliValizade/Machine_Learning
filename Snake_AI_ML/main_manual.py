@@ -1,9 +1,9 @@
 import arcade
-from snake import Snake
-from apple import Apple
+from modules.snake import Snake
+from modules.apple import Apple
 
-SCREEN_WIDTH = 500
-SCREEN_HEIGHT = 500
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 400
 
 class Game(arcade.Window):
     def __init__(self):
@@ -56,10 +56,8 @@ class Game(arcade.Window):
         #     self.snake.change_y = 0
         self.snake.move()
         if arcade.check_for_collision(self.apple.apple, self.snake):
-            self.snake.eat(1)
+            self.snake.eat()
             self.apple = Apple(SCREEN_WIDTH, SCREEN_HEIGHT)
-        # if arcade.check_for_collision(self.poo.poo, self.snake):
-        #     self.snake.eat(0)
-        #     self.poo = Poo()
+        
 game_board = Game()
 arcade.run()

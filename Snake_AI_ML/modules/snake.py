@@ -12,7 +12,7 @@ class Snake(arcade.Sprite):
         self.center_y = SCREEN_HEIGHT // 2
         self.change_x = 0
         self.change_y = 0
-        self.speed = 4
+        self.speed = 8
         self.body = []
         self.body.append([self.center_x, self.center_y])
 
@@ -32,14 +32,7 @@ class Snake(arcade.Sprite):
         self.center_x += (self.change_x * self.speed)
         self.center_y += (self.change_y * self.speed)
 
-    def eat(self, food):
-        if food == 1:
-            self.score += 1
-            self.body.append([self.center_x, self.center_y])
-        if food == 2:
-            self.score += 2
-            self.body.append([self.center_x, self.center_y])
-            self.body.append([self.center_x, self.center_y])
-        if food == 0:
-            self.score -= 1
-            self.body.pop()
+    def eat(self):
+        self.score += 1
+        self.body.append([self.center_x, self.center_y])
+        
