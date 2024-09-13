@@ -25,22 +25,23 @@ class Game(arcade.Window):
 
     def on_key_release(self, key: int, modifiers: int):
         super().on_key_release(key, modifiers)
-        if key == arcade.key.UP:
-            self.snake.change_y = 1
-            self.snake.change_x = 0
-        elif key == arcade.key.DOWN:
-            self.snake.change_y = -1
-            self.snake.change_x = 0
-        elif key == arcade.key.LEFT:
-            self.snake.change_x = -1
-            self.snake.change_y = 0
-        elif key == arcade.key.RIGHT:
-            self.snake.change_x = 1
-            self.snake.change_y = 0
         if key == arcade.key.Q:
             arcade.exit()
     
-    def on_update(self, delta_time: float):        
+    def on_update(self, delta_time: float):
+        if self.snake.center_x < self.apple.apple.center_x:
+            self.snake.change_x = 1
+        elif self.snake.center_x > self.apple.apple.center_x:
+            self.snake.change_x = -1
+        else:
+            self.snake.change_x = 0
+        
+        if self.snake.center_y < self.apple.apple.center_y:
+            self.snake.change_y = 1
+        elif self.snake.center_y > self.apple.apple.center_y:
+            self.snake.change_y = -1
+        else:
+            self.snake.change_y = 0
         self.snake.move()
         if arcade.check_for_collision(self.apple.apple, self.snake):
             self.snake.eat()
