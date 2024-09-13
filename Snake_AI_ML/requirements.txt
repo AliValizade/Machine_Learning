@@ -1,0 +1,6 @@
+Python 3.6+
+TensorFlow
+Pandas
+NumPy
+scikit-learn
+category_encoders
