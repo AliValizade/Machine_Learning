@@ -29,7 +29,6 @@ class Game(arcade.Window):
 
         arcade.finish_render()
 
-
     def on_update(self, delta_time: float):
         self.snake.move()
 
@@ -56,8 +55,8 @@ class Game(arcade.Window):
         self.game_over_checker()
 
     def game_over_checker(self):
-        for part in self.snake.body:
-            if self.snake.center_x == part["center_x"] and self.snake.center_y == part["center_y"]:
+        for segment in self.snake.body:
+            if self.snake.center_x == segment[0] and self.snake.center_y == segment[1]:
                 print("Snake hit his self.")
                 self.game_over = True
                 self.on_draw()
@@ -68,9 +67,9 @@ class Game(arcade.Window):
             self.game_over = True
             self.on_draw()
 
-    def on_key_release(self, symbol: int, modifiers: int):
-        pass
-
+    def on_key_release(self, key: int, modifiers: int):
+        if key == arcade.key.Q:
+            arcade.exit()
 
 if __name__ == "__main__":
     game = Game()
