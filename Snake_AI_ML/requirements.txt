@@ -23,13 +23,16 @@ numpy==1.26.4
 opt-einsum==3.3.0
 optree==0.12.1
 packaging==24.1
+pandas==2.2.2
 Pillow==9.3.0
 protobuf==4.25.4
 pycparser==2.22
 pyglet==2.0.dev23
 Pygments==2.18.0
 pymunk==6.4.0
+python-dateutil==2.9.0.post0
 pytiled-parser==2.2.0
+pytz==2024.2
 requests==2.32.3
 rich==13.8.1
 six==1.16.0
@@ -40,6 +43,7 @@ tensorflow-intel==2.17.0
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.4.0
 typing_extensions==4.12.2
+tzdata==2024.1
 urllib3==2.2.3
 Werkzeug==3.0.4
 wrapt==1.16.0
